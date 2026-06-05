@@ -1,0 +1,66 @@
+MATHEMATICAL ANALYSIS DUMP
+File: circuit_netlist.txt
+========================================
+
+--- LOOP ANALYSIS (Tie Set) ---
+
+Tie Set Matrix (B) (1x3):
+----------------------------------------
+Cols: V2, R1, L1
+Loop_L1 | Matrix([[-1, 1, 1]])
+
+Tie Set - Passive (B_fp) (1x2):
+----------------------------------------
+Cols: R1, L1
+Loop_L1 | Matrix([[1, 1]])
+
+Tie Set - Sources (B_fg) (1x1):
+----------------------------------------
+Cols: V2
+Loop_L1 | Matrix([[-1]])
+
+Impedance Matrix (Z_p) (2x2):
+----------------------------------------
+Cols: R1, L1
+R1 | Matrix([[10.0000000000000, 0]])
+L1 | Matrix([[0, 50.0*s]])
+
+Loop Impedance (Z_L) (1x1):
+----------------------------------------
+Matrix([[50.0*s + 10.0]])
+
+Loop Currents I_l(s) (1x1):
+----------------------------------------
+Matrix([[1000.0/((50.0*s + 10.0)*(s**2 + 10000.0))]])
+
+
+--- NODAL ANALYSIS (Incidence) ---
+
+Incidence Matrix (A) (1x3):
+----------------------------------------
+Cols: R1, L1, I_V2
+Node_1 | Matrix([[-1, 1, -1]])
+
+Incidence - Passive (A_p) (1x2):
+----------------------------------------
+Cols: R1, L1
+Node_1 | Matrix([[-1, 1]])
+
+Incidence - Sources (A_g) (1x1):
+----------------------------------------
+Cols: I_V2
+Node_1 | Matrix([[-1]])
+
+Admittance Matrix (Y_p) (2x2):
+----------------------------------------
+Cols: R1, L1
+R1 | Matrix([[0.100000000000000, 0]])
+L1 | Matrix([[0, 0.02/s]])
+
+Nodal Admittance (Y_n) (1x1):
+----------------------------------------
+Matrix([[0.1 + 0.02/s]])
+
+Node Voltages V_n(s) (1x1):
+----------------------------------------
+Matrix([[5000.0*s/((5.0*s + 1.0)*(s**2 + 10000.0))]])

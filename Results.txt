@@ -1,0 +1,13 @@
+SIMULATION RESULTS
+------------------
+Final Node Voltages:
+  v_0 = 0.0000 V
+  v_1 = 8.2773 V
+
+Final Loop Currents:
+  Loop_L1 = -0.0009 A
+
+Final Component Currents:
+  I_V2 = 0.0009 A
+  I_R1 = -0.0009 A
+  I_L1 = -0.0009 A
