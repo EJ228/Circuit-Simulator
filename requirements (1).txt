@@ -1,0 +1,12 @@
+# Circuit Simulator — Python dependencies
+# Install with:  pip install -r requirements.txt
+
+# Web framework + CORS (versions verified from the project's bundled environment)
+Flask==3.0.0
+Flask-Cors==4.0.0
+
+# Symbolic algebra, numerics, and plotting
+# Lower bounds chosen for Python 3.13 compatibility; newer versions are fine.
+sympy>=1.13
+numpy>=2.1
+matplotlib>=3.9
