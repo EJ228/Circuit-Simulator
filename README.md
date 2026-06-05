@@ -1,4 +1,4 @@
-# Circuit Simulator
+#  Circuit Simulator
 
 A full-stack web app that solves linear **RLC circuits symbolically in the Laplace (s) domain** — not just numerically — using two independent network-graph-theory methods and reconstructing the time-domain response via inverse Laplace transforms.
 
